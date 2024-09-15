@@ -43,7 +43,7 @@ const removeSpace=()=>{
   return (
     <>
       <div className="container"  style={{
-             color:props.mode==='dark'?'white':'black'
+             color:props.mode==='dark'?'white':'#042743'
             }
             }>
         <h1 >{props.heading}</h1>
@@ -57,7 +57,7 @@ const removeSpace=()=>{
             onChange={handleOnChange}
             style={{
               backgroundColor:props.mode==='dark'?'grey':'white',
-              color:props.mode==='dark'?'white':'black'
+              color:props.mode==='dark'?'white':'#042743'
             }
             }
           ></textarea>
@@ -80,14 +80,14 @@ const removeSpace=()=>{
 
       </div>
       <div className="container my-5" style={{
-             color:props.mode==='dark'?'white':'black'
+             color:props.mode==='dark'?'white':'#042743'
             }
             }>
         <h3>Your text Summary</h3>
         <p>{text.split(" ").length} words and  {text.length} characters </p>
         <p>Expected time to read the textarea content {0.008*text.split(" ").length}</p>
         <h4>Preview</h4>
-        <p>{text.length>0?text:'Enter something in the textbox to preview here'}</p>
+        <p>{text.length>0?text:'Enter something in the textbox above to preview here'}</p>
       </div>
     </>
   );
