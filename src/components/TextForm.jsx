@@ -5,10 +5,12 @@ export default function TextForm(props) {
     //console.log("UpperCse button was clicked"+text);
     let newText = text.toUpperCase();
     setText(newText);
+    props.showAlert("Converted to UpperCase!","success");
   };
   const handleLowerCase = () => {
     let newText = text.toLowerCase();
     setText(newText);
+    props.showAlert("Converted to LowerCase!","success");
   };
 
   const noOfVowels = () => {
@@ -27,12 +29,14 @@ export default function TextForm(props) {
     var text= document.getElementById("myBox");
     text.select();
     navigator.clipboard.writeText(text.value);
+    props.showAlert("Your text is copied to clipboard","success");
   }
 
 // Remove an extra space from the box
 const removeSpace=()=>{
   let newText=text.split(/[ ]+/);
   setText(newText.join(" "))
+  props.showAlert("After remove an extra space from the text","success");
 }
   const handleOnChange = (event) => {
     //console.log("Onchange")
