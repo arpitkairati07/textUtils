@@ -69,16 +69,16 @@ const removeSpace=()=>{
         <button className="btn btn-primary" onClick={handleUpperCase}>
           Convert to UpperCase
         </button>
-        <button className="btn btn-primary mx-3" onClick={handleLowerCase}>
+        <button className="btn btn-primary mx-3 my-2" onClick={handleLowerCase}>
           Convert to LowerCase
         </button>
-        <button className="btn btn-primary mx-3" onClick={noOfVowels}>
+        <button className="btn btn-primary mx-3 my-2" onClick={noOfVowels}>
           Count number of Vowels
         </button>
-        <button className="btn btn-primary mx-3" onClick={copyToClipboard}>
+        <button className="btn btn-primary mx-3 my-2" onClick={copyToClipboard}>
           Copy to Clipboard
         </button>
-        <button className="btn btn-primary mx-3" onClick={removeSpace}>
+        <button className="btn btn-primary mx-3 my-2" onClick={removeSpace}>
           Remove Extra space
         </button>
 

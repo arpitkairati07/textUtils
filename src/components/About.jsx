@@ -26,7 +26,7 @@ export default function About() {
 
   let myStyleContainer = {
     border: "1px solid white",
-    color: "white",
+    color: "grey",
     backgroundColor: "#042743",
   };
 
@@ -45,7 +45,7 @@ export default function About() {
               aria-controls="flush-collapseOne"
               style={myStyle}
             >
-              Accordion Item #1
+              <strong>Ananlyze to text</strong>
             </button>
           </h2>
           <div
@@ -54,9 +54,7 @@ export default function About() {
             data-bs-parent="#accordionFlushExample"
           >
             <div className="accordion-body">
-              Placeholder content for this accordion, which is intended to
-              demonstrate the <code>.accordion-flush</code> className. This is the
-              first item's accordion body.
+            TextUtils Web simplifies text analysis with features like word frequency counts, sentiment analysis, and readability scores. Its user-friendly interface lets you easily paste or upload text for instant results. Ideal for content creation, academic research, and customer feedback analysis, it ensures data privacy and is accessible from any device.
             </div>
           </div>
         </div>
@@ -71,7 +69,7 @@ export default function About() {
               aria-controls="flush-collapseTwo"
               style={myStyle}
             >
-              Accordion Item #2
+              <strong>Free to Use</strong> 
             </button>
           </h2>
           <div
@@ -80,10 +78,7 @@ export default function About() {
             data-bs-parent="#accordionFlushExample"
           >
             <div className="accordion-body">
-              Placeholder content for this accordion, which is intended to
-              demonstrate the <code>.accordion-flush</code> className. This is the
-              second item's accordion body. Let's imagine this being filled with
-              some actual content.
+            TextUtils Web offers free, user-friendly tools for analyzing text, including word frequency, sentiment, and readability. No cost or subscription required—just paste or upload your text and get instant insights. Perfect for content creators, researchers, and anyone needing quick text analysis.
             </div>
           </div>
         </div>
@@ -98,7 +93,7 @@ export default function About() {
               aria-controls="flush-collapseThree"
               style={myStyle}
             >
-              Accordion Item #3
+              <strong>Browser Compatiable</strong>
             </button>
           </h2>
           <div
@@ -107,20 +102,10 @@ export default function About() {
             data-bs-parent="#accordionFlushExample"
           >
             <div className="accordion-body" style={myStyle}>
-              Placeholder content for this accordion, which is intended to
-              demonstrate the <code>.accordion-flush</code> className. This is the
-              third item's accordion body. Nothing more exciting happening here
-              in terms of content, but just filling up the space to make it
-              look, at least at first glance, a bit more representative of how
-              this would look in a real-world application.
+            TextUtils Web is fully compatible with any browser, allowing seamless text analysis from any device. No downloads needed—just open your browser, access the tool, and start analyzing text effortlessly. Ideal for quick and easy insights on the go.
             </div>
           </div>
         </div>
-      </div>
-      <div className="container my-3">
-        <button className="my-5 btn btn-primary" onClick={toggleStyle}>
-          {btnText}
-        </button>
       </div>
     </div>
   );
